@@ -21,7 +21,7 @@ How does this help you with the problems mentioned above ?
 
  * Secondly, finding out what files changed and in detail what lines changed can easily be seen [http://code.google.com/p/steam-skins/source/list online] or with your subversion client.
 
-= Getting the resources from the Subversion Repositor y=
+= Getting the resources from the Subversion Repository =
 
 So to get the resources [http://code.google.com/p/steam-skins/source/checkout check out the subversion]
 
