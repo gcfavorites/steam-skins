@@ -1,0 +1,71 @@
+"resource/layout/overlay_screenshotspanel.layout"
+{
+	controls
+	{
+		ScreenshotsDetailPanel 
+		{ 
+			controlname="COverlay_Screenshots_Panel" 
+			style=detailsbox
+		}
+		TitleText { controlname="label" labeltext="#Overlay_Screenshots_Panel_Title" style=detailsboxtitle }
+		InstructionText { controlname="label" labeltext="#Overlay_Screenshots_Press_Hotkey"  style=highlight }
+
+		DarkRegion { controlname="ImagePanel" style=DarkRegion visible=0 }
+
+		SS0 { controlname="ImagePanel" style=PreviewImage }
+		SS1 { controlname="ImagePanel" style=PreviewImage }
+		SS2 { controlname="ImagePanel" style=PreviewImage }
+
+		ViewScreenshots { controlname="Button" labeltext="#Overlay_View_Screenshots" command="viewscreenshots" }
+		SetShortcut { controlname="Button" labeltext="#Overlay_Set_Shortcut" command="setshortcut" }
+
+	}
+	
+	colors
+	{
+
+	}	
+	
+	styles
+	{
+
+		Button
+		{
+			font-size=13
+			font-family=basefont
+			font-weight=400
+			inset=2
+		}
+
+		DarkRegion
+		{
+			bgcolor="40 40 40 255"
+		}
+
+		PreviewImage
+		{
+		}
+
+
+		highlight
+		{
+			textcolor=text
+		}
+	}
+	
+	layout
+	{
+		region { name=title margin-top=10 margin-bottom=10 margin-left=10 margin-right=10 width=max height=100 }
+		region { name=previews y=65 margin-top=10 margin-bottom=10 margin-left=10 margin-right=10 width=max height=124 }
+		region { name=actions y=188  margin-top=10 margin-bottom=10 margin-left=10 margin-right=10 width=max height=max }
+		place { control="TitleText" region=title }
+		place { control="InstructionText" region=title y=40 }
+
+		place { control="DarkRegion" region="previews" x=0 y=0 width=max height=max }
+		place { control="SS0" region="previews" x=5 y=10 width=97 height=84 }
+		place { control="SS1" region="previews" start="SS0" x=5 width=97 height=84 }
+		place { control="SS2" region="previews" start="SS1" x=5 width=97 height=84 }
+
+		place { control="ViewScreenshots,SetShortcut" region="actions" spacing=10 align=bottom  margin-bottom=4}
+	}
+}
