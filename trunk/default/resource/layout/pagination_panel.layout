@@ -1,0 +1,85 @@
+"resource/layout/pagination_panel.layout"
+{
+	controls
+	{
+		pagination { controlname="CPaginationPanel" style="pagination" }
+		pagedescription { controlname="Label" labeltext="#steam_paginationtext" style="pagedescriptionstyle" }
+		FirstLink { controlname="Button" labeltext="First" }
+		PreviousLink { controlname="Button" labeltext="Previous" }
+		page1 { controlname="Button" visible=0 }
+		page2 { controlname="Button" visible=0 }
+		page3 { controlname="Button" visible=0 }
+		page4 { controlname="Button" visible=0 }
+		page5 { controlname="Button" visible=0 }
+		page6 { controlname="Button" visible=0 }
+		page7 { controlname="Button" visible=0 }
+		page8 { controlname="Button" visible=0 }
+		page9 { controlname="Button" visible=0 }
+		page10 { controlname="Button" visible=0 }
+		page11 { controlname="Button" visible=0 }
+		page12 { controlname="Button" visible=0 }
+		page13 { controlname="Button" visible=0 }
+		page14 { controlname="Button" visible=0 }
+		page15 { controlname="Button" visible=0 }
+		page16 { controlname="Button" visible=0 }
+		page17 { controlname="Button" visible=0 }
+		page18 { controlname="Button" visible=0 }
+		page19 { controlname="Button" visible=0 }
+		page20 { controlname="Button" visible=0 }
+		NextLink { controlname="Button" labeltext="Next" }
+		LastLink { controlname="Button" labeltext="Last" }
+	}
+
+	colors
+	{
+		PaginationPanel.ExtraVerticalSpacing "35"
+	}
+
+	styles
+	{
+		paginationLinkDisabledStyle
+		{
+			textcolor=TextDisabled 
+			font-style=underline
+		}
+
+		pagedescriptionstyle
+		{
+		  padding-left=3
+		  font-size=15
+		}
+
+		Button
+		{
+			render_bg {}
+			minimum-width=30
+		}
+
+		Button:hover
+		{
+			render_bg {}
+			textcolor=White
+			font-style=underline,uppercase
+		}
+
+	
+		paginationLinkStyle
+		{
+			font-style=""
+			textcolor=Text2
+		}
+	
+		paginationLinkStyle:hover
+		{
+			textcolor=White
+			font-style=underline
+		}
+	}
+
+	layout
+	{
+		region { name=body margin=0 width=max height=max }
+		place { region=body control=pagedescription }
+		place { region=body y=20 control=FirstLink,PreviousLink,page1,page2,page3,page4,page5,page6,page7,page8,page9,page10,page11,page12,page13,page14,page15,page16,page17,page18,page19,page20,NextLink,LastLink }
+	}
+}
