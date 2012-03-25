@@ -1,4 +1,4 @@
-#How to get the resources of the default skin
+#summary How to get the resources of the default skin
 
 = Introduction =
 
