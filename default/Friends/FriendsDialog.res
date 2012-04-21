@@ -23,7 +23,7 @@
 		"BuddyList"
 		{
 			"ControlName" "CFriendsListSubPanel"
-			tabposition=2
+			tabposition=1
 		}
 
 		"frame_title"
@@ -141,7 +141,7 @@
 			"paintbackground"   "1"
 		}
 		
-		friends_search { ControlName=TextEntry maxchars=16 hintText="#steam_library_search" style="FriendsSearch" unicode=1 tabposition=1 }
+		friends_search { ControlName=TextEntry maxchars=16 hintText="#steam_library_search" style="FriendsSearch" unicode=1 tabposition=2 }
 		friends_search_icon	{ ControlName=Label style="FriendsSearchIcon" zpos="4" }		
 		
 	}
