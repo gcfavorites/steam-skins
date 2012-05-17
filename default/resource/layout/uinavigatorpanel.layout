@@ -30,7 +30,13 @@
 			command="Forward"
 
 		}
-		
+		"Fullscreen"
+		{
+			"ControlName"		"Button"
+			style="FullscreenButton"
+			command="Fullscreen"
+		}
+	
 		"refresh"
 		{
 			"ControlName"		"Button"
@@ -762,6 +768,9 @@
 
 		place [!$OSX] { control="back,forward" x=6 y=10 height=30 width=30 spacing=8 margin-right=5 margin-top=0 }
 		place [$OSX] { control="back,forward" x=4 y=10 height=30 width=30 spacing=8 margin-right=5 margin-top=0 }
+
+		place { control="fullscreen," align=right y=10 height=30 spacing=4 margin-right=0 width=30 }
+
 
 	
 		place { control="PageLoadThrobber" align=right y=54 height=20 width=20  margin-right=10 margin-top=1 }

@@ -365,7 +365,7 @@
 		"enabled"		"1"
 		"tabPosition"		"0"
 		"paintbackground"		"1"
-		"image"		"graphics/intel_security01"
+		"image"		"graphics/intel_security_01"
 		"fillcolor"		""
 		"gradientStart"		""
 		"gradientEnd"		""
