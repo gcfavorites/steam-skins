@@ -3980,6 +3980,35 @@ steam.styles
       image="graphics/icon_button_back_disabled"
     }
 	
+	FullscreenButton
+    {
+      bgcolor=none
+      inset="-5 -1 0 0"
+      render_bg={}
+      image="graphics/icon_button_fullscreen"
+    }
+	
+    FullscreenButton:hover
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_button_fullscreen_over"
+    }
+	
+    FullscreenButton:active
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_button_fullscreen_down"
+    }
+	
+    FullscreenButton:disabled
+    {
+      bgcolor=none
+      render_bg={}
+      image="graphics/icon_button_fullscreen_disabled"
+    }
+
     ForwardButton
     {
       bgcolor=none

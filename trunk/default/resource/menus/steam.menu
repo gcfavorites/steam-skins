@@ -83,6 +83,7 @@
 		Games							{	text="#steam_menu_view_games"			shellcmd="steam://nav/games" }
 		Divider							{}
 		ActivateRetail					{	text="#Steam_RegisterProductCode"		command="ActivateRetail" }
+		RedeemWalletVoucher				{	text="#Steam_RedeemWalletVoucher"		shellcmd="steam://url/RedeemWalletVoucher" }
 		ManageGuestPasses				{	text="#Steam_ManageGuestPasses"			command="ManageGuestPasses" }
 		AddShortcut						{	text="#Steam_menu_AddShortcut"			shellcmd="steam://AddNonSteamGame" }
 	}
