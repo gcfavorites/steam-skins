@@ -26,6 +26,7 @@
 		manuallink { controlname="URLLabel" labeltext="#Steam_Game_Manual" style="rightcolumnlink" }
 		newslink { controlname="URLLabel" labeltext="#Steam_News" style="rightcolumnlink" }
 		storelink { controlname="URLLabel" labeltext="#Steam_Game_SteamStorePage" style="rightcolumnlink" }
+		gamehublink { controlname="URLLabel" labeltext="#Steam_Game_GameHub" style="rightcolumnlink" }
 		dlclink { controlname="URLLabel" labeltext="#Steam_DLC" style="rightcolumnlink" }
 		cdkeylink { controlname="URLLabel" labeltext="#Steam_CDKeyLink" style="rightcolumnlink" }
 		guidelink { controlname="URLLabel" labeltext="#Steam_Guide" style="rightcolumnlink" }
@@ -309,7 +310,7 @@
 		//		Buttons and links on the right
 		place	
 		{ 
-			control=linkslabel,sendguestpasslink,achievementslink,forumlink,ogglink,manuallink,newslink,storelink,dlclink,cdkeylink,guidelink,supportlink,recommendlink,tagslabel,*taglink,edittagslink
+			control=linkslabel,sendguestpasslink,gamehublink,achievementslink,forumlink,ogglink,manuallink,newslink,storelink,dlclink,cdkeylink,guidelink,supportlink,recommendlink,tagslabel,*taglink,edittagslink
 			region=rightcolumn 
 			dir=down 
 			width=150 
