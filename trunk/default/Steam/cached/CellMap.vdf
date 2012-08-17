@@ -114,6 +114,7 @@
 				3 { "dest"	15 }
 				4 { "dest"	14 }
 				5 { "dest"	88 }
+				6 { "dest"	129 }
 			}
 		}
 
@@ -266,6 +267,7 @@
 				1 { "dest"	 5  }
 				2 { "dest"	86  }
 				3 { "dest"	87  }
+				4 { "dest"	129  }
 			}
 		}
 
@@ -428,11 +430,6 @@
 					"dest"	26 
 					"cost"	LocalCostOneWayCellEdge 
 				}
-				2 
-				{ 
-					"dest"	30
-					"cost"	LocalCostOneWayCellEdge 
-				}				
 			}
 		}
 
@@ -511,11 +508,12 @@
 		// #30 Israel
 		30
 		{
-			"name" "Middle East"
+			"name" "Israel"
 			"region"	"middle east"
 			"edges"
 			{
-				0 { "dest"	 24  }
+				0 { "dest"	 123  }
+				1 { "dest"	 126  }
 			}
 		}
 
@@ -523,7 +521,7 @@
 		31
 		{
 			"name" "US - Seattle"
-			"region"	"usa"
+			"region"	"seattle"
 			"edges"
 			{
 				0 { "dest"	10  }
@@ -665,7 +663,8 @@
 			"edges"
 			{
 				0 { "dest"	35  }
-				1 { "dest"	96  }
+				1 { "dest"	128  }
+				2 { "dest"	127  }
 			}
 		}
 
@@ -761,6 +760,7 @@
 			"edges"
 			{
 				0 { "dest"	16  }
+				1 { "dest"	37  }
 			}
 		}
 
@@ -1533,7 +1533,7 @@
 				}
 				4 
 				{ 
-					"dest"	36 
+					"dest"	123 
 					"cost"	LocalCostOneWayCellEdge
 				}								
 			}
@@ -1875,6 +1875,91 @@
 				0 { "dest"	51 }
 			}
 		}
+		123
+		{
+			"name" "Europe to Middle East"
+			"region"	"global"
+			"transit"	"1"
+			"edges"
+			{
+				0 { "dest"	96 }
+				1 
+				{ 
+					"dest"	124
+					"cost"	LocalCostOneWayCellEdge
+				}
+				2 
+				{ 
+					"dest"	30
+					"cost"	LocalCostOneWayCellEdge
+				}
+				3 
+				{ 
+					"dest"	125
+					"cost"	LocalCostOneWayCellEdge
+				}
+			}
+		}		
+		124
+		{
+			"name" "Turkey"
+			"region"	"middle east"
+			"edges"
+			{
+				0 { "dest"	123 }
+			}
+		}
+		125
+		{
+			"name" "Egypt"
+			"region"	"middle east"
+			"edges"
+			{
+				0 { "dest"	123 }
+				1 { "dest"	126 }
+			}
+		}
+		126
+		{
+			"name" "Saudi Arabia"
+			"region"	"middle east"
+			"edges"
+			{
+				0 { "dest"	127 }
+				1 { "dest"	125 }
+				2 { "dest"	30 }
+			}
+		}
+		127
+		{
+			"name" "United Arab Emirates"
+			"region"	"middle east"
+			"edges"
+			{
+				0 { "dest"	36 }
+				1 { "dest"	126 }
+			}
+		}
+		128
+		{
+			"name" "Pakistan"
+			"region"	"asia"
+			"edges"
+			{
+				0 { "dest"	36 }
+			}
+		}
+		129
+		{
+			"name" "Luxembourg"
+			"region"	"europe"
+			"edges"
+			{
+				0 { "dest"	15 }
+				1 { "dest"	5 }
+			}
+		}
+
 	}
 	"countries"
 	{

@@ -69,11 +69,10 @@
 		
 		account_url
 		{
-			"ControlName"		"URLLabel"
+			"ControlName"		"MenuButton"
 			"fieldName"		"account_url"
 			"labelText"		"#Steam_Account_Name"
-			"URLText"		"steam://url/StoreAccount/"
-			style="URLLabelSimple"
+			style="AccountURLStyle"
 		}
 		
 		account_balance_seperator
@@ -546,6 +545,20 @@
 		inboxmenuitem_active
 		{
 			textcolor=inbox_active_text
+		}
+		
+		AccountURLStyle
+		{
+		}
+		
+		AccountURLStyle:hover
+		{
+			textcolor=white
+		}
+		
+		AccountURLStyle:selected
+		{
+			textcolor=white
 		}
 	}
 	

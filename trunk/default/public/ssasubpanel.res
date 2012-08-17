@@ -52,6 +52,26 @@
 		"wrap"		"1"
 		style="important"
 	}
+	"Print"
+	{
+		"ControlName"		"URLLabel"
+		"fieldName"		"PrintLink"
+		"xpos"		"16"
+		"ypos"		"475"
+		"wide"		"180"
+		"tall"		"48"
+		"autoResize"		"0"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"		"0"
+		"labelText"		"#Steam_ClickToPrint"
+		"textAlignment"		"West"
+		"dulltext"		"0"
+		"brighttext"		"0"
+		"wrap"		"1"
+		"URLText"		""
+	}
 	
 	 styles
   {

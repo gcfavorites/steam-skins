@@ -80,13 +80,31 @@
 			"labelText"		"#steam_news"
 			style="CuiNavButton"
 		}
+		"label_friends"
+		{
+			"ControlName"		"Label"
+			"labelText"		"#steam_friends"
+			style="CuiNavButton"
+		}
 		"label_community"
 		{
 			"ControlName"		"Label"
 			"labelText"		"#steam_community"
 			style="CuiNavButton"
 		}
-	
+		
+		"label_community_new"
+		{
+			"ControlName"		"Label"
+			"labelText"		"NEW"
+			style="CUINavButtonNew"
+		}
+		"label_friends_new"
+		{
+			"ControlName"		"Label"
+			"labelText"		"NEW"
+			style="CuiNavButtonNew"
+		}
 		"URLBar"
 		{
 			"ControlName"		"TextEntry"
@@ -604,7 +622,12 @@
 		{
 			textcolor="texthover"
 		}
-
+		
+		CUINavButtonNew
+		{
+			textcolor="133 176 223 255"
+			font-weight=800
+		}
 		
 		CUINavButton [!$OSX]
 		{
@@ -764,15 +787,16 @@
 	
 	layout
 	{
-		place { control="label_store,label_library,label_news,label_community,label_console" x=80 y=3 spacing=8 margin=2 height=40 } 
+		place { control="label_store,label_library,label_news,label_friends,label_community,label_console" x=80 y=3 spacing=8 margin=2 height=40 } 
+		
+		place { control="label_community_new" start="label_friends" y="-40" x="15"}
+		place { control="label_friends_new" start="label_library" y="-40" x="15"}
 
 		place [!$OSX] { control="back,forward" x=6 y=10 height=30 width=30 spacing=8 margin-right=5 margin-top=0 }
 		place [$OSX] { control="back,forward" x=4 y=10 height=30 width=30 spacing=8 margin-right=5 margin-top=0 }
 
 		place { control="fullscreen," align=right y=10 height=30 spacing=4 margin-right=0 width=30 }
 
-
-	
 		place { control="PageLoadThrobber" align=right y=54 height=20 width=20  margin-right=10 margin-top=1 }
 		
 		place { control="subnavgroup_library" align=top-center y=50 height=26 width=max margin-right=8 margin-left=8 }
