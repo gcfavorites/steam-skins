@@ -13,7 +13,6 @@
 		GuideButton {	controlname="URLLabel" labeltext="#Overlay_Taskbar_Guide" style=sidemenu }			
 		LegacyCDKeyButton {	controlname="URLLabel" labeltext="#Overlay_Taskbar_legacycdkey" style=sidemenu }			
 		WebSiteButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_WebSite" style=sidemenu }	
-		ForumsButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_Forums" style=sidemenu }	
 		RecommendButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_Recommend" style=sidemenu }	
 		WorkshopButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_Workshop" style=sidemenu }	
 		
@@ -21,6 +20,9 @@
 		AchievementsDetailPanel { controlname="COverlay_Details_Achievements" style="detailsbox" }
 		NewsDetailPanel { controlname="COverlay_Details_News" style="detailsbox" }
 		ScreenshotsDetailPanel { controlname="COverlay_Details_Screenshots_Panel" style="detailsbox" }
+		GuidesDetailPanel { controlname="COverlay_Details_Guides_Panel" style="detailsbox" }
+		CommunityHubDetailPanel { controlname="COverlay_Details_CommunityHub_Panel" style="detailsbox" }
+		CommunityDiscussionsDetailPanel { controlname="COverlay_Details_CommunityDiscussions_Panel" style="detailsbox" }
 	}
 	
 	colors
@@ -50,12 +52,14 @@
 		region	 { name="mid" region=overlay width=400 height=max margin-top=2 align=top-center }
 		region	 { name="right" region=overlay width=400 height=max margin-top=10 align=right }
 		
-		region	{ name="detailpanels" region=overlay align=bottom width=max height=360 margin-bottom=100 }
+		region	{ name="detailpanels" region=overlay align=bottom width=max height=466 margin-bottom=206 }
+		region	{ name="detailpanels2" region=overlay align=bottom width=max height=210 margin-bottom=100 }
 		region	{ name="taskbar" region=overlay width="max" height=75 align=bottom }
 
-		place { controls="GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,LegacyCDKeyButton,WebSiteButton,ForumsButton,RecommendButton,WorkshopButton" y=50 align=right region=overlay dir=down spacing=10 }
+		place { controls="GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,LegacyCDKeyButton,WebSiteButton,RecommendButton,WorkshopButton" y=50 align=right region=overlay dir=down spacing=10 }
 		
-		place { controls="FriendsDetailPanel,NewsDetailPanel,AchievementsDetailPanel,ScreenshotsDetailPanel" region=detailpanels width=330 height=240 spacing=10 }
+		place { controls="FriendsDetailPanel,NewsDetailPanel,AchievementsDetailPanel,GuidesDetailPanel" region=detailpanels width=330 height=240 spacing=10 }
+		place { controls="ScreenshotsDetailPanel,CommunityHubDetailPanel,CommunityDiscussionsDetailPanel" region=detailpanels2 width=330 height=240 spacing=10 }
 	}
 	
 }

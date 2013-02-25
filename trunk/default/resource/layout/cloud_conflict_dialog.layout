@@ -114,13 +114,13 @@
 		
 		place { region=cloud control=CloudFilesIcon x=0 y=0 }
 		place { region=cloud control=TextCloudFiles x=75 y=10 }
-		place { region=cloud control=TextCloudFilesTime x=75 y=30 width=150 }
+		place { region=cloud control=TextCloudFilesTime x=75 y=35 width=max }
 		place { region=cloud controls=DownloadIcon x=200 y=8 }
 		place { region=cloud controls=AcceptRemoteButton x=225 y=8 width=max }
 		
 		place { region=local control=LocalFilesIcon x=0 y=0 }
 		place { region=local control=TextLocalFiles x=75 y=10 }
-		place { region=local control=TextLocalFilesTime x=75 y=30 width=150 }
+		place { region=local control=TextLocalFilesTime x=75 y=35 width=max }
 		place { region=local controls=UploadIcon x=200 y=8 }
 		place { region=local controls=AcceptLocalButton x=225 y=8 width=max}
 		place { region=local controls=BottomDivider y=80 width=max }

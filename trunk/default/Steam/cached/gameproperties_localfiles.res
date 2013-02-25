@@ -37,7 +37,7 @@
 	{
 		"ControlName"		"Label"
 		"fieldName"		"DiskUsageLabel"
-		"xpos"		"152"
+		"xpos"		"96"
 		"ypos"		"20"
 		"wide"		"200"
 		"tall"		"24"
@@ -51,6 +51,7 @@
 		"textAlignment"		"west"
 		"wrap"		"0"
 	}
+	
 	"BackupButton"
 	{
 		"ControlName"		"Button"
@@ -114,42 +115,6 @@
 		"Default"		"0"
 		"selected"		"0"
 	}
-	"FragTitle"
-	{
-		"ControlName"		"Label"
-		"fieldName"		"FragTitle"
-		"xpos"		"24"
-		"ypos"		"44"
-		"wide"		"128"
-		"tall"		"24"
-		"AutoResize"		"0"
-		"PinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"		"0"
-		"paintbackground"		"1"
-		"labelText"		"#Steam_GamePropertiesFragmentation"
-		"textAlignment"		"west"
-		"wrap"		"0"
-	}
-	"FragPercent"
-	{
-		"ControlName"		"Label"
-		"fieldName"		"FragPercent"
-		"xpos"		"150"
-		"ypos"		"44"
-		"wide"		"200"
-		"tall"		"24"
-		"AutoResize"		"0"
-		"PinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"		"0"
-		"paintbackground"		"1"
-		"labelText"		"%Fragmentation%"
-		"textAlignment"		"west"
-		"wrap"		"0"
-	}
 	"DefragButton"
 	{
 		"ControlName"		"Button"
@@ -168,6 +133,26 @@
 		"textAlignment"		"west"
 		"wrap"		"0"
 		"Command"		"rundefrag"
+		"Default"		"0"
+	}
+	"OpenInstallFolder"
+	{
+		"ControlName"		"Button"
+		"fieldName"		"OpenInstallFolder"
+		"xpos"		"24"
+		"ypos"		"54"
+		"wide"		"256"
+		"tall"		"24"
+		"AutoResize"		"0"
+		"PinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"		"4"
+		"paintbackground"		"1"
+		"labelText"		"#Steam_GamePropertiesOpenFolder"
+		"textAlignment"		"west"
+		"wrap"		"0"
+		"Command"		"OpenInstallFolder"
 		"Default"		"0"
 	}
 }

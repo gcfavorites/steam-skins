@@ -16,6 +16,7 @@
 		// Header text labels
 		gametitleheader { controlname="CDetailsGameTitleHeaderPanel" zpos="2" }
 		gamesubheader { controlname="CDetailsGameSubHeaderPanel" zpos="2" }
+		gamesubheaderright { controlname="CDetailsGameSubHeaderRightPanel" zpos="2" }
 
 		// Right column links
 		linkslabel { controlname="Label" labeltext="#Steam_Links" style="rightcolumnheadertext" } 
@@ -30,6 +31,7 @@
 		dlclink { controlname="URLLabel" labeltext="#Steam_DLC" style="rightcolumnlink" }
 		cdkeylink { controlname="URLLabel" labeltext="#Steam_CDKeyLink" style="rightcolumnlink" }
 		guidelink { controlname="URLLabel" labeltext="#Steam_Guide" style="rightcolumnlink" }
+		guideslink { controlname="URLLabel" labeltext="#Steam_Guides" style="rightcolumnlink" }
 		supportlink { controlname="URLLabel" labeltext="#Steam_Support" style="rightcolumnlink" }
 		recommendlink { controlname="URLLabel" labeltext="#Steam_Game_RecommendGame" style="rightcolumnlink" }
 
@@ -306,11 +308,12 @@
 		// Header text
 		place 	{ control=gametitleheader region=headertext dir=down height=46 }
 		place	{ control=gamesubheader start=gametitleheader region=headertext dir=down height=42 }
+		place	{ control=gamesubheaderright start=gamesubheader region=headertext margin-right=150 align=right height=42 }
 
 		//		Buttons and links on the right
 		place	
 		{ 
-			control=linkslabel,sendguestpasslink,gamehublink,achievementslink,forumlink,ogglink,manuallink,newslink,storelink,dlclink,cdkeylink,guidelink,supportlink,recommendlink,tagslabel,*taglink,edittagslink
+			control=linkslabel,sendguestpasslink,gamehublink,achievementslink,forumlink,ogglink,manuallink,newslink,storelink,dlclink,cdkeylink,guidelink,guideslink,supportlink,recommendlink,tagslabel,*taglink,edittagslink
 			region=rightcolumn 
 			dir=down 
 			width=150 

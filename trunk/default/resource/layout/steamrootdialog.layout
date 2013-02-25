@@ -9,6 +9,7 @@
 		zpos=-5
 		}
 		
+		
 		"New"
 		{
 		"ControlName" 	"URLLabel"
@@ -119,6 +120,7 @@
 	
 	styles
 	{    
+		
 		ClientLogo
 		{
 			bgcolor=none
@@ -549,6 +551,7 @@
 		
 		AccountURLStyle
 		{
+		  padding-top=-4
 		}
 		
 		AccountURLStyle:hover

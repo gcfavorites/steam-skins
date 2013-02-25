@@ -115,7 +115,7 @@
 		"enabled"		"1"
 		"tabPosition"		"0"
 		"paintbackground"		"1"
-		"image"		"graphics/intel_security_denied_01"
+		"image"		"graphics/logo6"
 		"fillcolor"		""
 		"gradientStart"		""
 		"gradientEnd"		""

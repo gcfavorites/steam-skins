@@ -158,4 +158,41 @@
 		"textAlignment"		"west"
 		"wrap"		"0"
 	}
+	
+	"InstallFolderLabel"
+	{
+		"ControlName"		"Label"
+		"fieldName"		"InstallFolderLabel"
+		"xpos"		"9"
+		"ypos"		"264"
+		"wide"		"200"
+		"tall"		"24"
+		"AutoResize"		"0"
+		"PinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"		"0"
+		"paintbackground"		"1"
+		"labelText"		"#SteamUI_ChooseInstallFolder"
+		"textAlignment"		"west"
+		"wrap"		"0"
+	}
+	
+	"InstallFolderCombo"
+	{
+		"ControlName"		"ComboBox"
+		"fieldName"		"InstallFolderCombo"
+		"xpos"		"200"
+		"ypos"		"264"
+		"wide"		"240"
+		"tall"		"24"
+		"AutoResize"		"0"
+		"PinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"		"0"
+		"paintbackground"		"1"
+		"textAlignment"		"west"
+		"wrap"		"0"
+	}
 }

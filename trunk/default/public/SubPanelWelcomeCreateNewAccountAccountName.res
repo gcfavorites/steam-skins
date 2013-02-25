@@ -37,10 +37,10 @@
 		"NumericInputOnly"		"0"
 		"unicode"		"0"
 	}
-	"PasswordEntry1"
+	"NewPasswordEntry"
 	{
 		"ControlName"		"TextEntry"
-		"fieldName"		"PasswordEntry1"
+		"fieldName"		"NewPasswordEntry"
 		"xpos"		"24"
 		"ypos"		"170"
 		"wide"		"264"
@@ -58,10 +58,10 @@
 		"unicode"		"0"
 		style="TextEntryLarge"
 	}
-	"PasswordEntry2"
+	"NewPasswordEntry2"
 	{
 		"ControlName"		"TextEntry"
-		"fieldName"		"PasswordEntry2"
+		"fieldName"		"NewPasswordEntry2"
 		"xpos"		"24"
 		"ypos"		"232"
 		"wide"		"264"
@@ -132,7 +132,7 @@
 		"paintbackground"		"1"
 		"labelText"		"#SteamUI_WelcomeCreatingAccountPassword"
 		"textAlignment"		"west"
-		"associate"		"PasswordEntry1"
+		"associate"		"NewPasswordEntry"
 		"wrap"		"0"
 	}
 	"Password2"
@@ -151,7 +151,43 @@
 		"paintbackground"		"1"
 		"labelText"		"#SteamUI_WelcomeCreatingAccountRetypePassword"
 		"textAlignment"		"west"
-		"associate"		"PasswordEntry2"
+		"associate"		"NewPasswordEntry2"
 		"wrap"		"0"
 	}
+	"StrengthMeterLabel"
+	{
+		"ControlName"		"Label"
+		"fieldName"		"StrengthMeterLabel"
+		"xpos"		"24"
+		"ypos"		"270"
+		"wide"		"264"
+		"tall"		"24"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"		"0"
+		"labelText"		"#Steam_PasswordStrength"
+		"textAlignment"		"west"
+		"dulltext"		"0"
+		"brighttext"		"0"
+		"wrap"		"0"
+	}
+	"StrengthMeter"
+	{
+		"ControlName"		"ProgressBar"
+		"fieldName"		"StrengthMeter"
+		"xpos"		"24"
+		"ypos"		"294"
+		"wide"		"264"
+		"tall"		"24"
+		"AutoResize"		"0"
+		"PinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"1"
+		"tabPosition"		"0"
+		"paintbackground"		"1"
+		"Progress"		"0.000000"
+	}	
+
 }
