@@ -1,5 +1,6 @@
 "resource/layout/uinavigatorpanel.layout"
 {
+
 	controls
 	{
 		"subnavgroup_library"
@@ -30,13 +31,14 @@
 			command="Forward"
 
 		}
-		"Fullscreen"
+		"fullscreen"
 		{
 			"ControlName"		"Button"
 			style="FullscreenButton"
-			command="Fullscreen"
+			command="fullscreen"
 		}
-	
+
+
 		"refresh"
 		{
 			"ControlName"		"Button"
@@ -80,31 +82,77 @@
 			"labelText"		"#steam_news"
 			style="CuiNavButton"
 		}
-		"label_friends"
-		{
-			"ControlName"		"Label"
-			"labelText"		"#steam_friends"
-			style="CuiNavButton"
-		}
 		"label_community"
 		{
 			"ControlName"		"Label"
 			"labelText"		"#steam_community"
 			style="CuiNavButton"
 		}
-		
-		"label_community_new"
+		"label_community_friends"
 		{
 			"ControlName"		"Label"
-			"labelText"		"NEW"
-			style="CUINavButtonNew"
+			"labelText"		"#steam_nav_friends"
+			style="CUINavButton2"
+			group="community"
+			zpos=1
 		}
-		"label_friends_new"
+		"label_community_groups"
 		{
 			"ControlName"		"Label"
-			"labelText"		"NEW"
-			style="CuiNavButtonNew"
+			"labelText"		"#steam_nav_groups"
+			style="CUINavButton2"
+			group="community"
+			zpos=1
 		}
+		"label_community_forums"
+		{
+			"ControlName"		"Label"
+			"labelText"		"#steam_nav_discussions"
+			style="CUINavButton2"
+			group="community"
+			zpos=1
+		}
+		"label_community_profile"
+		{
+			"ControlName"		"Label"
+			"labelText"		"#steam_nav_profile"
+			style="CUINavButton2"
+			group="community"
+			zpos=1
+		}
+		"label_community_gamehubs"
+		{
+			"ControlName"		"Label"
+			"labelText"		"#steam_nav_gamehubs"
+			style="CUINavButton2"
+			group="community"
+			zpos=1
+		}
+		"label_community_workshop"
+		{
+			"ControlName"		"Label"
+			"labelText"		"#steam_nav_workshop"
+			style="CUINavButton2"
+			group="community"
+			zpos=1
+		}
+		"label_community_greenlight"
+		{
+			"ControlName"		"Label"
+			"labelText"		"#steam_nav_greenlight"
+			style="CUINavButton2"
+			group="community"
+			zpos=1
+		}
+		"label_community_marketplace"
+		{
+			"ControlName"		"Label"
+			"labelText"		"#steam_nav_marketplace"
+			style="CUINavButton2"
+			group="community"
+			zpos=1
+		}
+
 		"URLBar"
 		{
 			"ControlName"		"TextEntry"
@@ -140,6 +188,15 @@
 	
 	styles
 	{
+		FullscreenButton
+		{
+			padding-left=0
+			padding-top=0
+			padding-right=0
+			padding-bottom=0
+		}
+		
+		
 		grouper
 		{
 			bgcolor=none
@@ -623,12 +680,6 @@
 			textcolor="texthover"
 		}
 		
-		CUINavButtonNew
-		{
-			textcolor="133 176 223 255"
-			font-weight=800
-		}
-		
 		CUINavButton [!$OSX]
 		{
 			textcolor="Labelfocus"
@@ -677,11 +728,12 @@
 			textcolor="Labelfocus"
 			bgcolor="none"
 			font-family=basefont
-			font-size=14
+			font-size=15
 			font-weight=400 
 			font-style="uppercase"
 			padding-left=5
 			padding-right=5
+			padding-bottom=4
 		}
 
 		CUINavButton2 [$OSX]
@@ -694,6 +746,7 @@
 			font-style="uppercase"
 			padding-left=5
 			padding-right=5
+			padding-bottom=4
 		}
  				
 		CUINavButton2:hover
@@ -765,7 +818,6 @@
 		inset="0 0 0 0"
 		render_bg={}
 		image="graphics/html_lock_disabled"
-		scaling=fit
 		}
 
 		URLBarSecure
@@ -787,38 +839,37 @@
 	
 	layout
 	{
-		place { control="label_store,label_library,label_news,label_friends,label_community,label_console" x=80 y=3 spacing=8 margin=2 height=40 } 
-		
-		place { control="label_community_new" start="label_friends" y="-40" x="15"}
-		place { control="label_friends_new" start="label_library" y="-40" x="15"}
+		place { control="label_store,label_library,label_community,label_news,label_console" x=80 y=3 spacing=8 margin=2 height=40 } 
+
+		place { control="label_community_friends,label_community_profile,label_community_gamehubs,label_community_forums,label_community_workshop,label_community_greenlight,label_community_marketplace" start="label_library" y="36" x="10" }
 
 		place [!$OSX] { control="back,forward" x=6 y=10 height=30 width=30 spacing=8 margin-right=5 margin-top=0 }
 		place [$OSX] { control="back,forward" x=4 y=10 height=30 width=30 spacing=8 margin-right=5 margin-top=0 }
 
-		place { control="fullscreen," align=right y=10 height=30 spacing=4 margin-right=0 width=30 }
+		place { control="fullscreen" tooltiptext="#tooltip_view_list" align=right y=40 height=64 spacing=4 margin-right=0 margin-top=0 width=100 region="bigpicture"}
+	
+		place { control="PageLoadThrobber" align=right y=54 height=20 width=20  margin-right=88 margin-top=1 }
 
-		place { control="PageLoadThrobber" align=right y=54 height=20 width=20  margin-right=10 margin-top=1 }
-		
-		place { control="subnavgroup_library" align=top-center y=50 height=26 width=max margin-right=8 margin-left=8 }
+		place { control="subnavgroup_library" align=top-center y=50 height=28 width=max margin-right=84 margin-left=8 }
 		
 		place { control="refresh,stop,home,URLStatusImage,EVCert,URLBar" align=left y=52 height=20 width=max spacing=5 margin-left=7 }
  	
 		place { control="library_search"  width=112 }	
 
-		place [!$OSX] { control="label_search_icon,library_search" align=left y=55 height=17 spacing=1 x=13 }
-		place  [$OSX] { control="label_search_icon,library_search" align=left y=55 height=17 spacing=1 x=12 }
+		place [!$OSX] { control="label_search_icon,library_search" align=left y=56 height=17 spacing=1 x=13 }
+		place  [$OSX] { control="label_search_icon,library_search" align=left y=56 height=17 spacing=1 x=12 }
 		
-		region { name="dropdown" width=200 x=82 y=54 height=20 }
+		region { name="dropdown" width=200 x=82 y=55 height=20 }
 		
 		place [!$OSX]  { control="library_filters" align=right spacing=1  region="dropdown" }
 		place  [$OSX]  { control="library_filters" align=right spacing=1  region="dropdown" }
  
 		place { control="library_zoom" width=82 height=20 }
 	     
-	    place [!$OSX] { control="label_library_zoom,library_zoom,label_zoom_separator,label_library_view" align=right y=55 height=20 spacing=3 margin-right=85 }
-		place [$OSX] { control="label_library_zoom,library_zoom,label_zoom_separator, label_library_view" align=right y=55 height=20 spacing=3 margin-right=84 }
+	  place [!$OSX] { control="label_library_zoom,library_zoom,label_zoom_separator,label_library_view" align=right y=55 height=20 spacing=3 margin-right=180 }
+		place [$OSX] { control="label_library_zoom,library_zoom,label_zoom_separator, label_library_view" align=right y=55 height=20 spacing=3 margin-right=179 }
 
-		place { control="library_filters_details,library_filters_list,library_filters_grid," align=right y=54 height=20 spacing=4 margin-right=11 width=20 }
+		place { control="library_filters_details,library_filters_list,library_filters_grid," align=right y=54 height=20 spacing=4 margin-right=88 width=20 }
 
  	  	place { control=emailreminderbar margin-top=81 margin-left=8 margin-right=8 width=max height=48 }
 

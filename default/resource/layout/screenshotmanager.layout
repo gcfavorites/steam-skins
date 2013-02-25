@@ -14,7 +14,8 @@
 		view_screenshots { controlname="Button" labeltext="#Overlay_View_All_Screenshots" command="viewscreenshots" }
 		view_local_library_button { controlname="Button" labeltext="#Overlay_View_Local" command="viewlocallibrary" visible=0 }
 		selectorlabel { controlname="Label" labeltext="#Overlay_Screenshots_Show" }
-		
+
+		spoiler_checkbox { controlname="CheckButton" labeltext="#Overlay_Tag_As_Potential_Spoiler" visible=0  }
 		publish_button { controlname="Button" labeltext="#Overlay_Publish" command="askpublishscreenshot" visible=0 }
 		publish_caption { controlname="CScreenshotCaptionEntry" unicode=1 }
 		delete_button { controlname="Button" labeltext="#Overlay_Delete" command="askdeletescreenshot" visible=1 }
@@ -229,6 +230,7 @@
 
 		place { control="null_placer" region="details" width=1 align=bottom margin-bottom=2 }
 		place { control="delete_button,details_button,publish_button" start="null_placer" region="details" align=right x=5 margin-bottom=5 margin-right=7 spacing=5 }
+		place { control="spoiler_checkbox" start="null_placer" region="details" align=left x=5 margin-bottom=5 margin-right=7 spacing=5 }
 
 
 		place { control="details_caption" region="details" x=5 align=bottom margin-bottom=35 height=60 width=max margin-right=7 }

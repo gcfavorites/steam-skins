@@ -24,6 +24,7 @@ gameoverlay.styles
 		{
 			font-size=28
 			font-style=uppercase
+			textcolor="99 159 233 255"
 		}
 	}
 }
