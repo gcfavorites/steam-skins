@@ -35,9 +35,6 @@
 		GamesDetails					{	text="#steam_menu_games_details"		shellcmd="steam://nav/games/details" }
 		GamesList						{	text="#steam_menu_games_list"			shellcmd="steam://nav/games/list" }
 		GamesGrid						{	text="#steam_menu_games_grid"			shellcmd="steam://nav/games/grid" }
-		Media							{	text="#steam_menu_media"				shellcmd="steam://nav/media" }
-		Tools							{	text="#steam_menu_tools"				shellcmd="steam://nav/tools" }
-		Downloads						{	text="#steam_menu_downloads"			shellcmd="steam://nav/downloads" }
 		Divider							{}
 		MiniMode			[!$OSX]		{	text="#steam_menu_minimode"				shellcmd="steam://open/minigameslist" }
 		LargeMode			[!$OSX]		{	text="#steam_menu_largemode"			shellcmd="steam://open/largegameslist" }
@@ -50,22 +47,6 @@
 		Inventory						{	text="#steam_inventory"					shellcmd="steam://open/inventory" }
 		Divider							{}
 		Settings			[!$OSX]		{	text="#steam_menu_settings"				command="Settings" }
-		Divider				[!$OSX]		{}
-		UserForums						{	text="#steam_forums"					command="Forums" }
-	}
-	
-	Profile
-	{
-		text="#steam_menu_profile_view"
-		
-		ViewProfile						{	text="#steam_menu_view_profile"			shellcmd="steam://url/SteamIDMyProfile" }
-		ViewBadges						{	text="#steam_menu_view_badges"			shellcmd="steam://url/SteamIDBadgePage" }
-		ViewGroups						{	text="#steam_menu_view_groups"			shellcmd="steam://url/SteamIDGroupsPage" }
-		ViewInventory					{	text="#steam_menu_view_inventory"		shellcmd="steam://url/CommunityInventory" }
-		ViewScreenshots					{	text="#steam_menu_view_screenshots"		shellcmd="steam://url/CommunityScreenshots" }
-		ViewVideos						{	text="#steam_menu_view_videos"			shellcmd="steam://url/CommunityVideos" }
-		ViewRecommendations				{	text="#steam_menu_view_recommendations"	shellcmd="steam://url/CommunityRecommendations" }
-		ViewWorkshop					{	text="#steam_menu_view_workshop"		shellcmd="steam://url/CommunityWorkshop" }
 	}
 	
 	Friends

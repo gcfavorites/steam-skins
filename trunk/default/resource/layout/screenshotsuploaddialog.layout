@@ -58,9 +58,9 @@
 	layout
 	{
 		place { control="upload_question" x=25 y=45 }
-		place { control="upload_info" x=25 y=45 width=max  }
-		place { control="error_info" x=25 y=45 width=max }
-		place { control="upload_progress" y=65 width=max margin-left=25 margin-right=25 height=2 }
+		place { control="upload_info" x=25 y=40 width=max  }
+		place { control="error_info" x=25 y=40 width=max }
+		place { control="upload_progress" y=85 width=max margin-left=25 margin-right=25 height=2 }
 		
 		place { control="upload_size" x=25 y=65 }
 		place { control="storage_remaining" x=25 y=80 }
