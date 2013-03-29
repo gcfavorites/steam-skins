@@ -124,6 +124,7 @@ steam.styles
     MenuBG2="61 59 58 255"
     
     Divider="107 104 101 255"
+	SuperDivider="61 61 61 255"
     DarkImageBorder="47 48 43 255"
     DarkImageOverlay="0 0 0 80"
 
@@ -4407,5 +4408,49 @@ steam.styles
    	{
    		padding-right=16
    	}
+
+	SuperNavMenu
+	{
+		padding-left=8
+		padding-right=8
+
+		render {}
+
+		render_bg
+		{
+			// top area and graphic
+			0="image_tiled( x0, y0, x1, y0+275, graphics/dd_texture)"
+			1="fill( x0, y0+0, x0+1, y1, black )"
+			2="fill( x1-1, y0+0, x1, y1, black )"
+			2="fill( x0, y1-1, x1, y1, black )"
+		}
+	}
+
+	SuperNavMenuItem
+	{
+		padding=4
+		font-size=14
+		bgcolor=none
+		font-style="uppercase"
+	}
+
+	SuperNavMenuItem:selected
+	{
+		textcolor="84 146 205 255"
+	}
+
+	SuperNavMenuItem:hover
+	{
+		textcolor="84 146 205 255"
+	}
+
+	"SuperNavMenuDivider"
+	{
+		textcolor="none"
+		render {
+			0="fill( x0+6, y0, x1-6, y0+1, black )"
+			1="fill( x0+6, y0+1, x1-6, y0+2, SuperDivider )"
+		}
+	}
   }
 }
